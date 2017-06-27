@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Second Bootstrap Project</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/style.css">
+  </head>
+
+  <body>
+
+<div class="navbar navbar-inverse navbar-static-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a href="" class="navbar-brand">Chilaquiles con Don Aquiles</a>
+
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle Navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+    </div>
+    <ul class="nav navbar-nav navbar-right collapse navbar-collapse">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="" data-toggle="modal" data-target="#modal-contact-form">Contact Us</a></li>
+      <li>
+        <form class="navbar-form" role="search">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search...">
+            <div class="input-group-btn">
+              <button class="btn btn-default" type="submit">
+                <i class="glyphicon glyphicon-search"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <h1>Featured Product</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, iste.</p>
+      <div class="btn-group btn-group-lg">
+        <button class="btn btn-info">Buy Now</button>
+        <button class="btn btn-default">Free Trail</button>
+      </div>
+        <p><a href="">Read More About the Products</a></p>
+    </div>
+    <div class="col-md-8 visible-md visible-lg">
+      <img src="img/95d6f7b44d67c4f32f18c0f9e45157c7.jpg" alt="" width="30%">
+    </div>
+  </div>
+</div>
+<hr />
+<div class="container">
+  <div class="row">
+    <h3>The Company</h3>
+    <div class="col-md-8">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, consequatur nemo corporis maxime accusamus laudantium quae sint ducimus velit iste natus veniam neque culpa veritatis! Ullam eum iusto, aspernatur minima.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit laboriosam commodi numquam consequatur reprehenderit eligendi, beatae autem mollitia labore eveniet in, ut corporis, similique neque magni nesciunt non magnam. Illum voluptatem nemo reiciendis aliquid perferendis, voluptatum numquam, modi provident ea fugiat dolor ipsam ratione! Saepe iure odio, facilis. Iusto, corrupti.</p>
+    </div>
+    <div class="col-md-4">
+      <p class="well well-lg text-center lead">
+        This is a great company!! I will remember it for the  years to come.
+      </p>
+    </div>
+  </div>
+</div>
+<hr />
+<div class="container">
+  <h3>Testimonials</h3>
+  <ol class="carousel-indicators">
+  <li data-target="#testimonials" data-slide-to="0" class="active"></li>
+  <li data-target="#testimonials" data-slide-to="1"></li>
+  <li data-target="#testimonials" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel" id="testimonials">
+    <div class="carousel-inner">
+      <div class="item active">
+        <blockquote>
+          <p>This is testimonial 1</p>
+          <small>John Doe</small>
+          <div class="item">
+        </blockquote>
+      </div>
+      <div class="item">
+        <blockquote>
+          <p>This is testimonial 2</p>
+          <small>John Doe</small>
+        </blockquote>
+      </div>
+      <div class="item">
+        <blockquote>
+          <p>This is testimonial 3</p>
+          <small>John Doe</small>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<div class="footer">
+  <p class="text-center lead">
+    Wanna get in touch? Email us at <a href="">shif_8@hotmail.com</a>
+  </p>
+  <hr>
+  <ul class="list-unstyled text-center list-inline features">
+    <li>Follow us:</li>
+    <li><a href=""><i class="fa fa-facebook-square"></i></a></li>
+    <li><a href=""><i class="fa fa-twitter-square"></i></a></li>
+    <li><a href=""><i class="fa fa-linkedin-square"></i></a></li>
+  </ul>
+  <p class="text-center text-muted">
+    &copy; Coyright 2017 Company Name
+  </p>
+</div>
+
+<!-- modal contact form -->
+
+<div class="modal fade" id="modal-contact-form" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="close" data-dismiss="modal">&times;</button>
+        <h3>Contact Us</h3>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="contact-name" class="from-control-label">Name:
+            </label>
+            <input type="text" class="form-control" id="caontact-name">
+          </div>
+          <div class="form-group">
+            <label for="form-contact-email" class="form-control-label">Email:</label>
+            <input type="email" class="form-control" id="contact-email">
+          </div>
+          <div class="form-group">
+            <label for="contact-message" class="form-control-label">Message</label>
+            <textarea name="" id="contact-message" cols="30" rows="10" class="form-control"></textarea>
+          </div>
+          <div class="form-group">
+            <div class="controls">
+              <input type="submit" class="btn btn-primary" value="Send Message">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-danger" data-dismiss="modal">Cancel</button>
+      </div></div>
+  </div>
+</div>
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.carousel').carousel({
+      interval: 3000
+    });
+  });
+</script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "mysecond_boostrap",
+  "homepage": "https://github.com/wallace8/projectTwo9a",
+  "authors": [
+    "wallace8 <shif_8@hotmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "fontawesome#^4.7.0"
+  }
+}
